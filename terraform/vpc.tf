@@ -1,4 +1,9 @@
-data "aws_availability_zones" "available" {}
+data "aws_availability_zones" "available" {
+  #   filter {
+  #   name   = "zone-name"
+  #   values = ["us-east-2a","us-east-2b"]
+  # }
+}
 
 resource "aws_vpc" "main" {
   cidr_block = var.main_cidr_block

@@ -1,1 +1,1 @@
-# aws-ha-app
+# 3-Tier-Arch-AWS
