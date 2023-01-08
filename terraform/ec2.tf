@@ -77,7 +77,7 @@ resource "aws_launch_template" "presentation_tier" {
     name = aws_iam_instance_profile.ec2_ecr_connection.name
   }
 
-  instance_type = "t2.nano"
+  instance_type = "t2.micro"
   image_id      = data.aws_ami.amazon_linux_2.id
 
   network_interfaces {
@@ -112,7 +112,7 @@ resource "aws_launch_template" "application_tier" {
     name = aws_iam_instance_profile.ec2_ecr_connection.name
   }
 
-  instance_type = "t2.nano"
+  instance_type = "t2.micro"
   image_id      = data.aws_ami.amazon_linux_2.id
 
   network_interfaces {
