@@ -64,7 +64,7 @@ EOF
 
 resource "aws_launch_template" "presentation_tier" {
   name = "presentation_tier"
-
+  key_name = "VScode"
   block_device_mappings {
     device_name = "/dev/xvda"
 
